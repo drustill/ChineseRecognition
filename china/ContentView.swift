@@ -7,7 +7,6 @@
 
 /*
  Writing plans for the app here because the ep formal is soon and i dont have time to do this shit rn and i dont wanna forget it:
- i wish i could write a book
  
  - fix the error that happens when u click clear and then try and draw (it auto clears - prob smething small gonna be annoying asf to find)
  - make the code more organized this shit is getting ugly it should not be in one file

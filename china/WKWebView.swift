@@ -26,7 +26,7 @@ class JSViewController: UIViewController, WKNavigationDelegate {
     }
     
     func javascriptShit(input: String, completion: @escaping ([String]) -> Void) {
-        let urlString = "http://localhost:3000/api/pinyin/\(input)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        let urlString = "https://recognitionapi.herokuapp.com/api/pinyin/\(input)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         if let url = URL(string: urlString ?? "") {
             URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if let error = error {
