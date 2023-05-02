@@ -10,6 +10,10 @@ app.get('/api/pinyin/:text', (req, res) => {
   res.send(result);
 });
 
+app.get('/', (res) => {
+  res.send("HelloPinyinAPI World");
+})
+
 // Start the server
 app.listen(3000, () => {
   console.log('API listening on port 3000');
