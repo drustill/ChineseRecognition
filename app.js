@@ -15,6 +15,6 @@ app.get('/', (res) => {
 })
 
 // Start the server
-app.listen(8080, () => {
+app.listen(process.env.PORT || 8080, () => {
   console.log('API listening on port 8080');
 });
