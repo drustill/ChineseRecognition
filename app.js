@@ -10,7 +10,7 @@ app.get('/api/pinyin/:text', (req, res) => {
   res.send(result);
 });
 
-app.get('/', (res) => {
+app.get('/', (req, res) => {
   res.send("HelloPinyinAPI World");
 })
 
